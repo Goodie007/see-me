@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-      {/* <Login /> */}
-      <Layout />
+      <Login />
+      {/* <Layout /> */}
+      
     </>
   );
 }
