@@ -3,8 +3,8 @@ import { CustomInput } from "../components/input";
 import Button from "../components/buttons";
 import { useNavigate } from "react-router-dom";
 
-export default function Login() {
-    const navigate = useNavigate()
+export default function SignUp() {
+  const navigate = useNavigate();
   return (
     <Box width={"100%"} paddingX={"20px"}>
       <Center
@@ -14,7 +14,7 @@ export default function Login() {
         paddingTop={10}
       >
         <Text fontSize={20} fontWeight={"600"}>
-          Login
+          Sign Up
         </Text>
         <Box
           width={{ base: "100%", md: "40%", lg: "40%" }}
@@ -60,17 +60,22 @@ export default function Login() {
               onClick={function (): void {
                 throw new Error("Function not implemented.");
               }}
-              label={"Login"}
+              label={"Sign up"}
               width={"100%"}
               bgColor="#022730"
               height={"48px"}
               borderRadius={"8px"}
               color="white"
             />
-            <Text textAlign={"center"} mt={3} as="button" onClick={() => {
-                navigate('/signup')
-            }}>
-              Sign up
+            <Text
+              textAlign={"center"}
+              mt={3}
+              as="button"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Login
             </Text>
           </Box>
         </Box>
